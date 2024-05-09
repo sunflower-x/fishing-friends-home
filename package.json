@@ -50,11 +50,9 @@
     "@tarojs/runtime": "3.6.28",
     "@tarojs/shared": "3.6.28",
     "@tarojs/taro": "3.6.28",
-    "axios": "^1.6.8",
-    "axios-taro-adapter": "^0.0.3",
     "mobx": "^6.9.0",
-    "ramda": "^0.28.0",
     "mobx-react": "^7.5.3",
+    "ramda": "^0.28.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
