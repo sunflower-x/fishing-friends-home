@@ -1,11 +1,18 @@
+import { serverURLObj } from './env';
+
+export const serverName = 'prod'; //prod正式 test测试
+
+const { NODE_SERVER_NOJSON, ...restServerUrlObj } = serverURLObj[serverName] || {};
+
 module.exports = {
   env: {
-    NODE_ENV: '"production"'
+    NODE_ENV: '"production"',
+    ...restServerUrlObj
   },
-  defineConstants: {
-  },
+  defineConstants: {},
   mini: {},
   h5: {
+    publicPath: './'
     /**
      * WebpackChain 插件配置
      * @docs https://github.com/neutrinojs/webpack-chain
@@ -17,7 +24,6 @@ module.exports = {
     //    */
     //   chain.plugin('analyzer')
     //     .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
-
     //   /**
     //    * 如果 h5 端首屏加载时间过长，可以使用 prerender-spa-plugin 插件预加载首页。
     //    * @docs https://github.com/chrisvfritz/prerender-spa-plugin
@@ -34,4 +40,4 @@ module.exports = {
     //     }))
     // }
   }
-}
+};

@@ -1,3 +1,4 @@
+const path = require('path');
 const config = {
   projectName: 'fishing-friends-home',
   date: '2024-5-9',
@@ -11,6 +12,13 @@ const config = {
   outputRoot: 'dist',
   plugins: [],
   defineConstants: {
+  },
+  alias: {
+    '@/pages': path.resolve(__dirname, '..', 'src/pages'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
+    '@/stores': path.resolve(__dirname, '..', 'src/stores'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/modelBase': path.resolve(__dirname, '..', 'src/modelBase')
   },
   copy: {
     patterns: [
