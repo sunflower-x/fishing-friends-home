@@ -10,7 +10,7 @@ const App = () => {
         console.log(baseModel,'baseModel');
     })
     return <>
-        <View>首页</View>
+        <div>首页</div>
         <Button onClick={() => { indexBase.getUserInfo() }}>发送请求</Button>
     </>
 }

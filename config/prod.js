@@ -1,6 +1,6 @@
 import { serverURLObj } from './env';
 
-export const serverName = 'prod'; //prod正式 test测试
+export const serverName = 'test'; //prod正式 test测试
 
 const { NODE_SERVER_NOJSON, ...restServerUrlObj } = serverURLObj[serverName] || {};
 

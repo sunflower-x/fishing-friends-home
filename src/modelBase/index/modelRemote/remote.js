@@ -3,6 +3,6 @@ import http from '@/utils/query/http';
 
 export default {
     getUserInfo: () => {
-        return http.get('/user/info',{id:111})
+        return http.post('/user/login',{id:111})
     }
 }

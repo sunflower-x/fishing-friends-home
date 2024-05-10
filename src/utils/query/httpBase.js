@@ -21,7 +21,7 @@ export const publicBasicsHttp = (requestObject, baseDataKeys = [], isNeedLogin =
     let config = {};
     config.data = escapeUndefined({ ...getBaseDataKeys(['ext.atom.entId', 'brandId'].concat(baseDataKeys)), ...data });
     config.method = method || 'GET';
-    config.url = `${getServerHost()}${url}.do`;
+    config.url = `${getServerHost()}${url}`;
     config.header = Object.assign({}, config.header, {
       'Content-Type': 'application/x-www-form-urlencoded',
       Accept: 'application/json;charset=UTF-8',
