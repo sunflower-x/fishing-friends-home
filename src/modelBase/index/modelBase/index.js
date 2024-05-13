@@ -12,7 +12,7 @@ class ModelBase {
     // 获取用户信息
     getUserInfo =  () => {
         console.log(Remote,'Remote');
-        return Remote.getUserInfo({id:111}).then((res) => {
+        return Remote.getUserInfo({userName:'123'}).then((res) => {
             console.log(res,'res');
         })
     }
