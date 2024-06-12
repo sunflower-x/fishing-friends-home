@@ -1,0 +1,48 @@
+.tab-wrapper {
+  height: 800px;
+  padding: 0px 15px;
+  background-color: #f8f8f8;
+}
+.card {
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: calc(100% - 40px);
+  height: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.card-location {
+  display: flex;
+  justify-content: flex-start;
+  span {
+    color: red;
+  }
+}
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  .localtion-wrapper {
+    width: 65%;
+    .location-intro {
+      margin: 10px 0px;
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box; //作为弹性伸缩盒子模型显示。
+      -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+      -webkit-line-clamp: 3; //显示的行
+    }
+  }
+}

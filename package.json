@@ -35,6 +35,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@antmjs/vantui": "^3.4.1",
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.6.28",
     "@tarojs/helper": "3.6.28",
@@ -66,6 +67,7 @@
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.0",
     "@types/webpack-env": "^1.13.6",
+    "babel-plugin-import": "^1.13.8",
     "babel-preset-taro": "3.6.28",
     "eslint": "^8.12.0",
     "eslint-config-taro": "3.6.28",
