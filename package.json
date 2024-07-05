@@ -35,7 +35,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@antmjs/vantui": "^3.4.1",
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.6.28",
     "@tarojs/helper": "3.6.28",
@@ -52,6 +51,7 @@
     "@tarojs/runtime": "3.6.28",
     "@tarojs/shared": "3.6.28",
     "@tarojs/taro": "3.6.28",
+    "antd-mobile": "^5.36.1",
     "mobx": "^6.9.0",
     "mobx-react": "^7.5.3",
     "ramda": "^0.28.0",
